@@ -1,9 +1,9 @@
 Package: meteoR
 Title: Herramientas para análisis de datos meteorológicos
 Version: 0.0.0.9000
-Authors@R: 
-    Luca("Luca", "Giuffrida", , "lucagiu204@gmail,.com, role = c("aut", "cre")),
-    Felipe("Felipe, "Widmer", "fwidmer18@gmail.com", role = "aut")
+Authors@R: c(
+    person(given = "Luca", family = "Giuffrida", email = "lucagiu204@gmail.com", role = c("aut", "cre")),
+    person(given = "Felipe", family = "Widmer", email = "fwidmer188@gmail.com", role = "aut"))
 Description: Paquete desarrollado para analizar y visualizar datos meteorológicos. 
     Incluye funciones para calcular promedios de temperatura, 
     totales de precipitación, y generar gráficos de tendencias temporales.
