@@ -17,3 +17,10 @@ BugReports: https://github.com/LucaGiu204/meteoR/issues
 Depends: 
     R (>= 3.5)
 LazyData: true
+Imports: 
+    cli,
+    dplyr,
+    ggplot2,
+    glue,
+    lubridate,
+    readr
