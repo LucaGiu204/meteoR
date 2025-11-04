@@ -1,4 +1,4 @@
-grafico_temperatura_mensual <- function(datos, colores, titulo = "Temperatura") {
+grafico_temperatura_mensual <- function(datos, colores = c("blue", "red"), titulo = "Temperatura") {
   datos |>
     dplyr::mutate(mes = lubridate::month(fecha)) |>
     dplyr::group_by(estacion, mes) |>
