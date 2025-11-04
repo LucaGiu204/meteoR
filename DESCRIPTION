@@ -23,4 +23,9 @@ Imports:
     ggplot2,
     glue,
     lubridate,
-    readr
+    readr,
+    tidyr
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr

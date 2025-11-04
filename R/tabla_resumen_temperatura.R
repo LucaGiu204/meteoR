@@ -13,4 +13,3 @@ tabla_resumen_temperatura <- function(datos) {
     tidyr::pivot_wider(names_from = estacion, values_from = valor)
 }
 
-tabla_resumen_temperatura(datos_estaciones)
