@@ -1,3 +1,14 @@
+#' Title Grafico de Temperatura Promedio Mensual
+#'
+#' @param datos dataframe con las columnas fecha, id y temperatura_abrigo_150cm
+#' @param colores colores de las lineas del grafico
+#' @param titulo titulo del grafico
+#'
+#' @returns grafico de lineas con la temperatura promedio mensual por id
+#' @export
+#'
+#' @examples
+#'   grafico_temperatura_mensual(NH0046)
 grafico_temperatura_mensual <- function(datos, colores = c("blue", "red"), titulo = "Temperatura Promedio Mensual") {
   datos |>
     dplyr::mutate(mes = lubridate::month(fecha)) |>
