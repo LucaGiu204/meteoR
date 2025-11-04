@@ -33,9 +33,8 @@ ruta especifica con:
 
 ``` r
 library(meteoR)
-leer_estacion("NH0472", "data/NH0472.csv")
-#> el archivo no existe en esa direccion, descargando...
-#> archivo descargado correctamente
+leer_estacion("NH0472", "datos/NH0472.csv")
+#> el archivo ya existe en esa direccion, leyendo archivo...
 #> Rows: 20425 Columns: 35
 #> ── Column specification ────────────────────────────────────────────────────────
 #> Delimiter: ","
@@ -47,4 +46,51 @@ leer_estacion("NH0472", "data/NH0472.csv")
 #> ℹ Use `spec()` to retrieve the full column specification for this data.
 #> ℹ Specify the column types or set `show_col_types = FALSE` to quiet this message.
 #> archivo leido correctamente,
+#> # A tibble: 20,425 × 35
+#>    id     fecha      temperatura_abrigo_150cm temperatura_abrigo_150cm_maxima
+#>    <chr>  <date>                        <dbl>                           <dbl>
+#>  1 NH0472 1961-07-01                     11.1                            13.4
+#>  2 NH0472 1961-07-02                      5.5                            10.5
+#>  3 NH0472 1961-07-03                      6                              10.8
+#>  4 NH0472 1961-07-04                     NA                              NA  
+#>  5 NH0472 1961-07-05                     12.4                            14.8
+#>  6 NH0472 1961-07-06                     11                              16.5
+#>  7 NH0472 1961-07-07                      7                              10  
+#>  8 NH0472 1961-07-08                      5.6                            10  
+#>  9 NH0472 1961-07-09                     NA                              NA  
+#> 10 NH0472 1961-07-10                      8.4                            12.1
+#> # ℹ 20,415 more rows
+#> # ℹ 31 more variables: temperatura_abrigo_150cm_minima <dbl>,
+#> #   temperatura_intemperie_5cm_minima <dbl>,
+#> #   temperatura_intemperie_50cm_minima <dbl>,
+#> #   temperatura_suelo_5cm_media <lgl>, temperatura_suelo_10cm_media <lgl>,
+#> #   temperatura_inte_5cm <lgl>, temperatura_intemperie_150cm_minima <lgl>,
+#> #   humedad_suelo <lgl>, precipitacion_pluviometrica <dbl>, granizo <dbl>, …
 ```
+
+Luego, podes generar una tabla resumen de temperatura con:
+
+``` r
+tabla_resumen_temperatura(NH0472)
+#> # A tibble: 2 × 4
+#>   maximo minimo estadistica NH0472
+#>    <dbl>  <dbl> <chr>        <dbl>
+#> 1   42.1     -8 media        18.0 
+#> 2   42.1     -8 desvio        8.69
+```
+
+Y graficar la temperatura promedio mensual con:
+
+``` r
+grafico_temperatura_mensual(NH0472)
+```
+
+<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
+
+## Logo del paquete
+
+<figure>
+<img src="img/WhatsApp%20Image%202025-11-04%20at%2012.10.50.jpeg"
+alt="Logo del paquete" />
+<figcaption aria-hidden="true">Logo del paquete</figcaption>
+</figure>

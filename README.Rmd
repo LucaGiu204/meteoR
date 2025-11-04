@@ -56,5 +56,5 @@ grafico_temperatura_mensual(NH0472)
 ```
 
 
-## Logo
+## Logo del paquete
 ![Logo del paquete](img/WhatsApp Image 2025-11-04 at 12.10.50.jpeg)
