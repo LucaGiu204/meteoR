@@ -18,15 +18,7 @@ knitr::opts_chunk$set(
 library(meteoR)
 ```
 
-```{r setup, include=FALSE}
-# Cargamos el paquete que estamos desarrollando
-library(meteoR)
-# Cargamos librerías necesarias para los ejemplos
-library(dplyr)
-library(ggplot2)
-library(tidyr)
-library(readr)
-```
+
 
 
 ---
@@ -48,21 +40,21 @@ Incluye funciones para:
 Primero leemos los datos de las estaciones meteorológicas.
 
 ```{r}
-leer_estacion(NH0046, "path/a/tu/archivo.csv")
+leer_estacion("NH0472", "datos/NH0472.csv")
 ```
 
 
-Ahora que tenemos un dataset llamado NH0046 con datos meteorológicos de una estación.
+Ahora que tenemos un dataset llamado NH0472 con datos meteorológicos de una estación.
 (el usuario debe proveer sus datos o usar los incluidos en el paquete)
 
 ```{r}
-tabla_resumen_temperatura(NH0046)
+tabla_resumen_temperatura(NH0472)
 ```
 
 Tambien podemos graficar la temperatura promedio mensual con la siguiente funcion:
 
 ```{r}
-grafico_temperatura_mensual(NH0046)
+grafico_temperatura_mensual(NH0472)
 ```
 
 
