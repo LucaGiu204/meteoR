@@ -7,8 +7,7 @@ Authors@R: c(
 Description: Paquete desarrollado para analizar y visualizar datos meteorológicos. 
     Incluye funciones para calcular promedios de temperatura, 
     totales de precipitación, y generar gráficos de tendencias temporales.
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.3
