@@ -18,11 +18,6 @@ knitr::opts_chunk$set(
 library(meteoR)
 ```
 
-
-
-
----
-
 ### 3️⃣ Introducción / propósito
 Qué hace este paquete
 

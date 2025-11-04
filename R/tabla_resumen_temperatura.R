@@ -1,4 +1,4 @@
-#' Title
+#' Title Tabla Resumen de Temperatura
 #'
 #' @param datos el nombre del dataframe con las columnas id, temperatura_abrigo_150cm_maxima, temperatura_abrigo_150cm_minima
 #'
