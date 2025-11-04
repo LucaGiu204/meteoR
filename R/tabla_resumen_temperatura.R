@@ -1,0 +1,16 @@
+tabla_resumen_temperatura <- function(datos) {
+  datos |>
+    dplyr::select(estacion, temperatura_abrigo_150cm_maxima, temperatura_abrigo_150cm_minima) |>
+    tidyr::pivot_longer(cols = c(temperatura_abrigo_150cm_maxima, temperatura_abrigo_150cm_minima),
+                 names_to = "tipo",
+                 values_to = "valor") |>
+    dplyr::group_by(estacion) |>
+    dplyr::summarise(media = mean(valor, na.rm = TRUE),
+              desvio = sd(valor, na.rm = TRUE)) |>
+    tidyr::pivot_longer(cols = c(media, desvio),
+                 names_to = "estadistica",
+                 values_to = "valor") |>
+    tidyr::pivot_wider(names_from = estacion, values_from = valor)
+}
+
+tabla_resumen_temperatura(datos_estaciones)
