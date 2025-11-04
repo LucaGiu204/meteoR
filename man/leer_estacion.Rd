@@ -7,12 +7,12 @@
 leer_estacion(id, ruta)
 }
 \arguments{
-\item{id}{el id de la estacion a leer}
+\item{id}{El id de la estacion a leer}
 
-\item{ruta}{ruta donde se descargan o leen los datos}
+\item{ruta}{Ruta donde se descargan o leen los datos}
 }
 \value{
-un dataframe con los datos de la estacion en la ruta indicada
+Un dataframe con los datos de la estacion en la ruta indicada
 }
 \description{
 Leer datos de una estacion meteorologica

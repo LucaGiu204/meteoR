@@ -1,9 +1,9 @@
 #' Leer datos de una estacion meteorologica
 #'
-#' @param id el id de la estacion a leer
-#' @param ruta ruta donde se descargan o leen los datos
+#' @param id El id de la estacion a leer
+#' @param ruta Ruta donde se descargan o leen los datos
 #'
-#' @returns un dataframe con los datos de la estacion en la ruta indicada
+#' @returns Un dataframe con los datos de la estacion en la ruta indicada
 #' @export
 #'
 #' @examples
