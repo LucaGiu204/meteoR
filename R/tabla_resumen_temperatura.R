@@ -1,3 +1,12 @@
+#' Title
+#'
+#' @param datos el nombre del dataframe con las columnas id, temperatura_abrigo_150cm_maxima, temperatura_abrigo_150cm_minima
+#'
+#' @returns dataframe con la temperatura media, desviacion estandar, maximo y minimo por id
+#' @export
+#'
+#' @examples
+#'  tabla_resumen_temperatura(NH0046)
 tabla_resumen_temperatura <- function(datos) {
   datos |>
     dplyr::select(id, temperatura_abrigo_150cm_maxima, temperatura_abrigo_150cm_minima) |>
