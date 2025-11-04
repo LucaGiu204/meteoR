@@ -5,7 +5,12 @@
 
 <!-- badges: start -->
 
+[![Lifecycle:
+experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+
 <!-- badges: end -->
+
+## Autores: **Luca Giuffrida, Felipe Widmer**
 
 El objetivo de meteoR es ofrecer un conjunto básico de herramientas para
 la lectura, organización y visualización de datos meteorológicos, con
@@ -29,8 +34,7 @@ ruta especifica con:
 ``` r
 library(meteoR)
 leer_estacion("NH0472", "data/estacion1.csv")
-#> el archivo no existe en esa direccion, descargando...
-#> archivo descargado correctamente
+#> el archivo ya existe en esa direccion, leyendo archivo...
 #> Rows: 20425 Columns: 35
 #> ── Column specification ────────────────────────────────────────────────────────
 #> Delimiter: ","

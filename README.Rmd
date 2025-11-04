@@ -16,7 +16,12 @@ knitr::opts_chunk$set(
 # meteoR
 
 <!-- badges: start -->
+
+[![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
+
 <!-- badges: end -->
+
+## Autores: **Luca Giuffrida, Felipe Widmer**
 
 El objetivo de meteoR es ofrecer un conjunto básico de herramientas para la lectura, organización y visualización de datos meteorológicos, con fines exclusivamente educativos.
 
