@@ -57,12 +57,15 @@ Ahora que tenemos un dataset llamado NH0046 con datos meteorológicos de una est
 
 ```{r}
 tabla_resumen_temperatura(NH0046)
+<<<<<<< HEAD
 ```
 
 Tambien podemos graficar la temperatura promedio mensual con la siguiente funcion:
 
 ```{r}
 grafico_temperatura_mensual(NH0046)
+=======
+>>>>>>> 782d4e34b1833813a9abf6fbd2bd04e5997f6a5a
 ```
 
 
