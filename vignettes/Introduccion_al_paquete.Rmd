@@ -45,14 +45,24 @@ Incluye funciones para:
 
 ## Ejemplos de uso:
 
-Supongamos que tenemos un dataset llamado datos_estaciones
+Primero leemos los datos de las estaciones meteorológicas.
+
+```{r}
+leer_estacion(NH0046, "path/a/tu/archivo.csv")
+```
+
+
+Ahora que tenemos un dataset llamado NH0046 con datos meteorológicos de una estación.
 (el usuario debe proveer sus datos o usar los incluidos en el paquete)
 
 ```{r}
-df <- read_csv("C:/Users/monst/OneDrive/Documentos/meteoR/datos/NH0472.csv")
+tabla_resumen_temperatura(NH0046)
+```
 
-tabla_resumen_temperatura(df)
+Tambien podemos graficar la temperatura promedio mensual con la siguiente funcion:
 
+```{r}
+grafico_temperatura_mensual(NH0046)
 ```
 
 
