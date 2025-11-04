@@ -35,7 +35,7 @@ Incluye funciones para:
 Primero leemos los datos de las estaciones meteorológicas.
 
 ```{r}
-leer_estacion("NH0472", "datos/NH0472.csv")
+leer_estacion("NH0046", "datos/NH0046.csv")
 ```
 
 
@@ -43,13 +43,13 @@ Ahora que tenemos un dataset llamado NH0472 con datos meteorológicos de una est
 (el usuario debe proveer sus datos o usar los incluidos en el paquete)
 
 ```{r}
-tabla_resumen_temperatura(NH0472)
+tabla_resumen_temperatura(NH0046)
 ```
 
 Tambien podemos graficar la temperatura promedio mensual con la siguiente funcion:
 
 ```{r}
-grafico_temperatura_mensual(NH0472)
+grafico_temperatura_mensual(NH0046)
 ```
 
 
