@@ -2,7 +2,7 @@
 % Please edit documentation in R/tabla_resumen_temperatura.R
 \name{tabla_resumen_temperatura}
 \alias{tabla_resumen_temperatura}
-\title{Title}
+\title{Title Tabla Resumen de Temperatura}
 \usage{
 tabla_resumen_temperatura(datos)
 }
@@ -13,7 +13,7 @@ tabla_resumen_temperatura(datos)
 dataframe con la temperatura media, desviacion estandar, maximo y minimo por id
 }
 \description{
-Title
+Title Tabla Resumen de Temperatura
 }
 \examples{
  tabla_resumen_temperatura(NH0046)
