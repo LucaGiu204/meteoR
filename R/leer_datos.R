@@ -20,4 +20,6 @@ leer_estacion <- function(id, ruta){
   }
   datos <- readr::read_csv(ruta)
   cli::cli_inform("archivo leido correctamente,")
+  return(datos)
   }
+
