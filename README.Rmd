@@ -40,7 +40,19 @@ Podes leer los datos de estaciones meteorológicas y guardarlas en una ruta espe
 
 ```{r example}
 library(meteoR)
-leer_estacion("NH0472", "data/NH0472.csv")
+leer_estacion("NH0472", "datos/NH0472.csv")
+```
+
+Luego, podes generar una tabla resumen de temperatura con:
+
+```{r}
+tabla_resumen_temperatura(NH0472)
+```
+
+Y graficar la temperatura promedio mensual con:
+
+```{r}
+grafico_temperatura_mensual(NH0472)
 ```
 
 
