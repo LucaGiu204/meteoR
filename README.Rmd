@@ -13,13 +13,17 @@ knitr::opts_chunk$set(
 )
 ```
 
-# meteoR
+# meteoR <img src="man/figures/logo.png" align="right" height="120" alt="" />
+
+
 
 <!-- badges: start -->
 
 [![Lifecycle: experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 
 <!-- badges: end -->
+
+
 
 ## Autores: **Luca Giuffrida, Felipe Widmer**
 
@@ -56,5 +60,4 @@ grafico_temperatura_mensual(NH0472)
 ```
 
 
-## Logo del paquete
-![Logo del paquete](img/WhatsApp Image 2025-11-04 at 12.10.50.jpeg)
+

@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# meteoR
+# meteoR <img src="man/figures/logo.png" align="right" height="120" alt="" />
 
 <!-- badges: start -->
 
@@ -86,11 +86,3 @@ grafico_temperatura_mensual(NH0472)
 ```
 
 <img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
-
-## Logo del paquete
-
-<figure>
-<img src="img/WhatsApp%20Image%202025-11-04%20at%2012.10.50.jpeg"
-alt="Logo del paquete" />
-<figcaption aria-hidden="true">Logo del paquete</figcaption>
-</figure>
