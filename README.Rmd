@@ -42,3 +42,7 @@ Podes leer los datos de estaciones meteorológicas y guardarlas en una ruta espe
 library(meteoR)
 leer_estacion("NH0472", "data/NH0472.csv")
 ```
+
+
+## Logo
+![Logo del paquete](img/WhatsApp Image 2025-11-04 at 12.10.50.jpeg)
