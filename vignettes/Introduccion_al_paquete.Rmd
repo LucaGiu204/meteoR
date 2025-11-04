@@ -17,3 +17,44 @@ knitr::opts_chunk$set(
 ```{r setup}
 library(meteoR)
 ```
+
+```{r setup, include=FALSE}
+# Cargamos el paquete que estamos desarrollando
+library(meteoR)
+# Cargamos librerías necesarias para los ejemplos
+library(dplyr)
+library(ggplot2)
+library(tidyr)
+library(readr)
+```
+
+
+---
+
+### 3️⃣ Introducción / propósito
+Qué hace este paquete
+
+El paquete **meteoR** permite trabajar con datos meteorológicos de estaciones, 
+resumir estadísticas de temperatura y generar gráficos de manera sencilla.
+
+Incluye funciones para:
+
+- Convertir unidades de temperatura o longitud.
+- Calcular estadísticas resumidas por estación o mes.
+- Graficar la evolución de la temperatura por estación.
+
+## Ejemplos de uso:
+
+Supongamos que tenemos un dataset llamado datos_estaciones
+(el usuario debe proveer sus datos o usar los incluidos en el paquete)
+
+```{r}
+df <- read_csv("C:/Users/monst/OneDrive/Documentos/meteoR/datos/NH0472.csv")
+
+tabla_resumen_temperatura(df)
+
+```
+
+
+
+
