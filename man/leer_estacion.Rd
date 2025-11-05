@@ -18,5 +18,8 @@ Un dataframe con los datos de la estacion en la ruta indicada
 Leer datos de una estacion meteorologica
 }
 \examples{
-  leer_estacion("NH0472", "datos/NH0472.csv")
+  ruta_tmp <- file.path(tempdir(), "NH0472.csv")
+  df <- leer_estacion("NH0472", ruta_tmp)
+  head(df)
+
 }

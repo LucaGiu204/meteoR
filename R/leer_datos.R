@@ -7,7 +7,10 @@
 #' @export
 #'
 #' @examples
-#'   leer_estacion("NH0472", "datos/NH0472.csv")
+#'   ruta_tmp <- file.path(tempdir(), "NH0472.csv")
+#'   df <- leer_estacion("NH0472", ruta_tmp)
+#'   head(df)
+#'
 leer_estacion <- function(id, ruta){
   url <- glue::glue("https://raw.githubusercontent.com/rse-r/intro-programacion/main/datos/{id}.csv")
 
