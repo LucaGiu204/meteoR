@@ -7,7 +7,8 @@
 
 [![Lifecycle:
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
-
+[![Codecov test
+coverage](https://codecov.io/gh/LucaGiu204/meteoR/graph/badge.svg)](https://app.codecov.io/gh/LucaGiu204/meteoR)
 <!-- badges: end -->
 
 ## Autores: **Luca Giuffrida, Felipe Widmer**
@@ -72,11 +73,13 @@ Luego, podes generar una tabla resumen de temperatura con:
 
 ``` r
 tabla_resumen_temperatura(NH0472)
-#> # A tibble: 2 × 4
-#>   maximo minimo estadistica NH0472
-#>    <dbl>  <dbl> <chr>        <dbl>
-#> 1   42.1     -8 media        18.0 
-#> 2   42.1     -8 desvio        8.69
+#> # A tibble: 4 × 2
+#>   estadistica NH0472
+#>   <chr>        <dbl>
+#> 1 media        18.0 
+#> 2 desvio        8.69
+#> 3 maximo       42.1 
+#> 4 minimo       -8
 ```
 
 Y graficar la temperatura promedio mensual con:
