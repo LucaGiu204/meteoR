@@ -23,6 +23,13 @@ test_that("tabla_resumen_temperatura falla si faltan columnas requeridas", {
     temperatura_abrigo_150cm_maxima = 20
     # falta temperatura_abrigo_150cm_minima
   )
-  expect_error(tabla_resumen_temperatura(df_bad), NA)
+
+  # Espera el error que hoy lanza dplyr/tidyselect
+  expect_error(
+    tabla_resumen_temperatura(df_bad),
+    "columns? that don't exist|doesn't exist",   # regex flexible para EN/ES
+    fixed = FALSE
+  )
 })
+
 
