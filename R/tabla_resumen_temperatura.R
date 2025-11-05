@@ -16,7 +16,7 @@ tabla_resumen_temperatura <- function(datos) {
     dplyr::group_by(id) |>
     dplyr::summarise(
       media = mean(valor, na.rm = TRUE),
-      desvio = sd(valor, na.rm = TRUE),
+      desvio = stats::sd(valor, na.rm = TRUE),
       maximo = max(valor, na.rm = TRUE),
       minimo = min(valor, na.rm = TRUE))|>
     tidyr::pivot_longer(cols = c(media, desvio, maximo, minimo),

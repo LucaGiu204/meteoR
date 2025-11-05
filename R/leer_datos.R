@@ -16,7 +16,7 @@ leer_estacion <- function(id, ruta){
 
   if(!file.exists(ruta)){
     cli::cli_inform("el archivo no existe en esa direccion, descargando...")
-    download.file(url, ruta, mode = "wb")
+    utils::download.file(url, ruta, mode = "wb")
     cli::cli_inform("archivo descargado correctamente")
   } else {
     cli::cli_inform("el archivo ya existe en esa direccion, leyendo archivo...")
