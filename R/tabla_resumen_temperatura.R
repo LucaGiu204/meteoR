@@ -19,7 +19,7 @@ tabla_resumen_temperatura <- function(datos) {
       desvio = sd(valor, na.rm = TRUE),
       maximo = max(valor, na.rm = TRUE),
       minimo = min(valor, na.rm = TRUE))|>
-    tidyr::pivot_longer(cols = c(media, desvio),
+    tidyr::pivot_longer(cols = c(media, desvio, maximo, minimo),
                  names_to = "estadistica",
                  values_to = "valor") |>
     tidyr::pivot_wider(names_from = id, values_from = valor)
