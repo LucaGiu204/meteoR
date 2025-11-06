@@ -1,6 +1,4 @@
-url: ~
+url: https://lucagiu204.github.io/meteoR/
 template:
   bootstrap: 5
-  bootswatch: darkly
-  assets:
-    - pkgdown/extra.css
+
