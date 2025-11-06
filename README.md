@@ -9,6 +9,7 @@
 experimental](https://img.shields.io/badge/lifecycle-experimental-orange.svg)](https://lifecycle.r-lib.org/articles/stages.html#experimental)
 [![Codecov test
 coverage](https://codecov.io/gh/LucaGiu204/meteoR/graph/badge.svg)](https://app.codecov.io/gh/LucaGiu204/meteoR)
+[![R-CMD-check](https://github.com/LucaGiu204/meteoR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/LucaGiu204/meteoR/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 ## Autores: **Luca Giuffrida, Felipe Widmer**
