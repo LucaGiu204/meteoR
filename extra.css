@@ -1,0 +1,91 @@
+/* ======== ESTILO GENERAL ======== */
+body {
+  background: linear-gradient(to bottom, #f7fbff, #e3f2fd);
+  color: #1b263b;
+  font-family: 'Roboto', 'Segoe UI', sans-serif;
+}
+
+/* ======== ENCABEZADO Y NAVBAR ======== */
+.navbar {
+  background-color: #0d47a1 !important; /* azul profundo */
+  border-bottom: 3px solid #42a5f5;
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: #ffffff !important;
+  font-size: 1.4rem;
+}
+
+.navbar-nav > li > a {
+  color: #e3f2fd !important;
+}
+
+.navbar-nav > li > a:hover {
+  color: #90caf9 !important;
+}
+
+/* ======== TÍTULOS ======== */
+h1, h2, h3, h4 {
+  color: #0d47a1;
+  font-weight: 600;
+}
+
+/* ======== LINKS ======== */
+a {
+  color: #1565c0;
+}
+
+a:hover {
+  color: #42a5f5;
+}
+
+/* ======== TABLAS ======== */
+table.table {
+  border: 1px solid #bbdefb;
+}
+
+table.table thead {
+  background-color: #e3f2fd;
+  color: #0d47a1;
+}
+
+table.table tbody tr:hover {
+  background-color: #f1f8ff;
+}
+
+/* ======== BOTONES ======== */
+.btn-primary {
+  background-color: #1976d2;
+  border-color: #1976d2;
+}
+
+.btn-primary:hover {
+  background-color: #1565c0;
+  border-color: #0d47a1;
+}
+
+/* ======== FOOTER ======== */
+footer {
+  background-color: #0d47a1;
+  color: #e3f2fd;
+  padding: 20px;
+  text-align: center;
+  border-top: 3px solid #42a5f5;
+}
+
+footer a {
+  color: #90caf9;
+}
+
+footer a:hover {
+  color: #bbdefb;
+}
+
+/* ======== BLOQUES DE CÓDIGO ======== */
+pre, code {
+  background-color: #e3f2fd !important;
+  border-radius: 6px;
+  padding: 6px;
+  color: #0d47a1;
+}
